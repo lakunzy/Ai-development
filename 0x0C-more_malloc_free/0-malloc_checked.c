@@ -7,14 +7,14 @@
  *
  * Return: a pointer to the allocated memory
  */
+
 void *malloc_checked(unsigned int b)
 {
-	void *ptr;
+	char *i;
 
-	ptr = malloc(b);
-
-	if (ptr == NULL)
+	i = malloc(b);
+		if (i == NULL)
 		exit(98);
-
-	return (ptr);
+		else
+	return (i);
 }
